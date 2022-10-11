@@ -1,0 +1,18 @@
+#main {
+    width: 100%;
+}
+
+#circle {
+    width: 20%;
+    border: 8px solid rgb(56, 53, 53);
+    border-radius: 50%;
+    margin: 50px;
+}
+
+body {
+    background-color: gray;
+}
+
+div {
+    text-align: center;
+}
