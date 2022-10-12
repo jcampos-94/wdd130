@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Ubuntu&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,15 +9,19 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
     background-color: #FCE172;
-    color: #134266;
+    color: #213466;
 }
 
 .home-title {
     color: #134266;
+    font-family: Lora, 'Times New Roman', serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -30,12 +36,20 @@ h4 {
     width: 100%;
 }
 
+.card-img {
+    border: 10px solid #213466;
+}
+
 .button-box {
     text-align: center;
 }
 
 main section {
     text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
 }
 
 #background {
@@ -45,6 +59,10 @@ main section {
 
 body {
     background-color: white;
+    font-family: Ubuntu, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -54,6 +72,10 @@ header {
     background-color: #FCE172;
     color: #134266;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -61,20 +83,31 @@ header {
     color: #134266;
 }
 
+h2 {
+    margin: 0;
+}
+
 .msg {
     background-color: #78C5D7;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
     color: white;
+    font-family: Lora, 'Times New Roman', serif;
 }
 
 .msg p {
     color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer {
     background-color: #78C5D7;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer p {
@@ -92,10 +125,23 @@ footer a:hover {
     text-decoration: underline;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .logo {
     width: 80px;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
