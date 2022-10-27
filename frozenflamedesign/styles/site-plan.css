@@ -5,25 +5,25 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #396E94   ;
-  --secondary-color: #E7C24F ;
-  --accent1-color: #A42212;
-  --accent2-color: white;
+  --primary-color: #24B0EE;
+  --secondary-color: #89E4FE;
+  --accent1-color: #003E84;
+  --accent2-color: #1397E1;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: Eczar, Alice, Arvo, serif;
+  --paragraph-font: Laila, "Fira Sans", "Average Sans", sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --headline-color-on-white: #003E84;  /* headlines on a white background */ 
+  --headline-color-on-color: #24B0EE; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #1397E1; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #24B0EE; /* paragraph text on a colored background */ 
+  --paragraph-background-color: black;
+  --nav-link-color: #24B0EE;
+  --nav-background-color: black;
+  --nav-hover-link-color: black;
+  --nav-hover-background-color: #89E4FE; 
 }
 
 
@@ -39,6 +39,7 @@ body {
 img {
   display: block;
   margin: 0 auto;
+  width: 50%;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
@@ -64,7 +65,7 @@ header > h1, header > h2 {
 
 p {
   font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
+  color: var(--paragraph-color-on-white);
   padding: 1em;
 }
 .colors {
