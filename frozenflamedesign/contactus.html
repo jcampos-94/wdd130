@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Frozen Flame Desgin | Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo-link">
+        <img src="images/ff_logo.png" alt="FFD Logo" />
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="contactus.html">Contact Us</a>
+      </nav>
+    </header>
+    <main>
+      <div id="contact-1">
+        <img id="plane" src="images/mail.png" alt="mail" />
+        <div id="contact-text-1">
+          <h1 id="contact-title-1">Why hire us?</h1>
+          <section id="contact-paragraph-1">
+            <p>
+              - Because we know what it means to start from scratch with little
+              resources and tons of struggle.
+            </p>
+            <p>
+              - Because we know how it feels when you can't reach your goal
+              because people are unaware of your business.
+            </p>
+            <p>
+              - Because we've been there when the prices for publicity and
+              recognition were far more than we could pay.
+            </p>
+            <p>
+              - And because we've experienced first-hand the joy of seeing our
+              clients prosper after the extra push we could provide them.
+            </p>
+          </section>
+        </div>
+      </div>
+      <div id="contact-2">
+        <h1 id="contact-title-2">Too good to be true?</h1>
+        <p>
+          Just check our clients who started thriving after a simple logo or
+          greeting card became part of their businesses. Many began to post
+          their brand on social media and eventually started managing their own
+          website! And just like that, a local bakery barely hanging out became
+          a pillar of its community. At the same time, a couple in love with the
+          desire to provide a romantic experience to other couples became the
+          must-call business when looking to go out for dinner with your special
+          one. That can be your dream becoming a reality as well!
+        </p>
+      </div>
+      <div id="contact-3">
+        <h1 id="contact-title-3">A designer is waiting just for you.</h1>
+        <p>Bring happiness to their life, and yours, by filling this:</p>
+        <div id="form">
+          <form action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Send your message</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <img id="call" src="images/call.png" src="contact">
+      </div>
+      <div id="feedback"></div>
+    </main>
+    <footer>
+      <h3>Our happy and loyal clients:</h3>
+      <div id="footer-logos">
+        <a
+          id="delhissire"
+          href="https://delhissirepastel.negocio.site/?fbclid=IwAR1RJ3YivdtqSPVmvUwjlcafOV6Cs6GYOwXxJa30rq-CP2h9I8jfQcfHvJI"
+        >
+          <img src="images/delhissire_white.png" alt="delhisire_white" />
+        </a>
+        <a id="yaliz" href="https://www.facebook.com/yaliz.estilos.7">
+          <img src="images/yaliz_white.png" alt="yaliz_white" />
+        </a>
+        <a id="cenas" href="https://www.facebook.com/cenasromanticaslove">
+          <img src="images/cenas_white.png" alt="cenas_white" />
+        </a>
+        <div id="aristeo">
+          <img src="images/aristeo_white.png" alt="aristeo_white" />
+        </div>
+        <div id="stevmel">
+          <img src="images/stevmel_white.png" alt="stevmel_white" />
+        </div>
+        <div id="electric">
+          <img src="images/electric_white.png" alt="electric_white" />
+        </div>
+        <div id="marine">
+          <img src="images/marine_white.png" alt="marine_white" />
+        </div>
+        <div id="catering">
+          <img src="images/catering_white.png" alt="catering_white" />
+        </div>
+      </div>
+      <a id="site-plan" href="site-plan.html">Site Plan</a>
+    </footer>
+    <script>
+      // get the feedback div element so we can do something with it.
+      const feedbackElement = document.getElementById("feedback");
+      // get the form so we can read what was entered in it.
+      const formElement = document.forms[0];
+      // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+      formElement.addEventListener("submit", function (e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML =
+          "Hello " +
+          formElement.user_name.value +
+          "! Thank you for your message. We will get back with you as soon as possible!";
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle("moveDown");
+      });
+    </script>
+  </body>
+</html>
