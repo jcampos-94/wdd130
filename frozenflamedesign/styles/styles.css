@@ -1,3 +1,250 @@
-img {
-    height: 250px;
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Arvo&family=Average+Sans&family=Eczar&family=Fira+Sans&family=Laila&display=swap");
+
+/*----- HOME -----*/
+body {
+  background-color: black;
+  font-family: Laila, "Fira Sans", "Average Sans", sans-serif;
+}
+
+/*--- header ---*/
+header {
+  display: grid;
+  grid-template-columns: 270px 1fr auto;
+}
+#logo-link {
+  grid-area: 1/1/2/2;
+}
+header img {
+  width: 100%;
+}
+nav {
+  grid-area: 1/3/2/6;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-child {
+  justify-self: center;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #24b0ee;
+  padding: 35px;
+}
+.nav-child:hover {
+  color: black;
+  background-color: #24b0ee;
+}
+/*--- header end ---*/
+
+/*--- body ---*/
+
+/*--- Hero ---*/
+
+/*--- slider ---*/
+/*Basic structure of slider*/
+.container {
+  width: 500px;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  border: 10px solid #1397e1;
+  border-radius: 8px;
+}
+
+/*Area of images*/
+.wrapper {
+  width: 100%;
+  display: flex;
+  animation: slide 45s infinite;
+}
+.wrapper img {
+  width: 100%;
+}
+/*Animation activated by keyframes*/
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  5.2% {
+    transform: translateX(0);
+  }
+  10.4% {
+    transform: translateX(-100%);
+  }
+  15.6% {
+    transform: translateX(-100%);
+  }
+  20.8% {
+    transform: translateX(-200%);
+  }
+  26% {
+    transform: translateX(-200%);
+  }
+  31.2% {
+    transform: translateX(-300%);
+  }
+  36.4% {
+    transform: translateX(-300%);
+  }
+  41.6% {
+    transform: translateX(-400%);
+  }
+  46.8% {
+    transform: translateX(-400%);
+  }
+  52% {
+    transform: translateX(-500%);
+  }
+  57.2% {
+    transform: translateX(-500%);
+  }
+  62.4% {
+    transform: translateX(-600%);
+  }
+  67.6% {
+    transform: translateX(-600%);
+  }
+  72.8% {
+    transform: translateX(-700%);
+  }
+  78% {
+    transform: translateX(-700%);
+  }
+  83.2% {
+    transform: translateX(-800%);
+  }
+  88.4% {
+    transform: translateX(-800%);
+  }
+  93.6% {
+    transform: translateX(-900%);
+  }
+  100% {
+    transform: translateX(-900%);
+  }
+}
+/*--- slider end ---*/
+
+#hero {
+  display: grid;
+  grid-template-columns: 550px 50px 1fr;
+  padding: 100px 20px 45px 0px;
+}
+#slide {
+  grid-area: 1/1/2/2;
+}
+#hero-msg {
+  grid-area: 1/3/3/3;
+}
+h1 {
+  color: #24b0ee;
+  font-size: 4em;
+  font-family: Eczar, Alice, Arvo, serif;
+}
+p {
+  color: #24b0ee;
+  font-size: 1.25em;
+}
+p a {
+  color: #24b0ee;
+  text-decoration: none;
+}
+p a:hover {
+  color: white;
+}
+/*--- Hero end ---*/
+
+/*--- Footer ---*/
+footer {
+  background-color: #1397e1;
+}
+h3 {
+  padding: 5px;
+  margin-left: 25px;
+}
+#footer-logos {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer img {
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-top: -20px;
+}
+footer a:hover {
+  opacity: 0.8;
+}
+#site-plan {
+  font-size: 0.7em;
+  float: right;
+}
+/*--- Footer end---*/
+
+/*--- body end ---*/
+
+/*----- HOME end -----*/
+
+/* Media */
+
+@media screen and (max-width: 1600px) {
+  .container {
+    width: 300px;
+  }
+  #hero {
+    display: grid;
+    grid-template-columns: 350px 50px 1fr;
+    padding: 100px 20px 45px 0px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 1em;
+  }
+  #marine,
+  #electric {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #marine,
+  #electric,
+  #catering {
+    display: none;
+  }
+  #hero-msg {
+    margin-top: -100px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    flex-direction: column;
+  }
+  #hero {
+    display: grid;
+    grid-template-columns: 350px;
+    padding: 100px 20px 45px 0px;
+    justify-content: center;
+  }
+  #slide {
+    grid-area: 1/1/2/2;
+  }
+  #hero-msg {
+    grid-area: 2/1/3/2;
+    margin-top: auto;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 1em;
+  }
+  footer div {
+    display: none;
+  }
 }
