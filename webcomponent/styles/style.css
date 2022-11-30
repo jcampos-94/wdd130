@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Arvo&family=Average+Sans&family=Eczar&family=Fira+Sans&family=Laila&display=swap");
+
+body {
+  background-color: black;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: black;
+  color: #24B0EE;
+  padding: 16px;
+  font-size: 1.3em;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: Laila, "Fira Sans", "Average Sans", sans-serif;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #24B0EE;
+  color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  float: right;
+  position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  /*min-width: 160px;*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #24B0EE;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  font-family: Laila, "Fira Sans", "Average Sans", sans-serif;
+  font-size: 1em;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
