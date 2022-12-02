@@ -192,6 +192,12 @@ footer a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+#pack-msg{
+  grid-area: 1/1/2/2;
+}
+#pack-cards{
+  grid-area: 1/2/3/2;
+}
 
 /* Media */
 
