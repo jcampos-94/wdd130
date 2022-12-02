@@ -198,6 +198,9 @@ footer a:hover {
 #pack-cards{
   grid-area: 1/2/3/2;
 }
+.card-img{
+  height: 150px;
+}
 
 /* Media */
 
