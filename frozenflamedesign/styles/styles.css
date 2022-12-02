@@ -187,9 +187,17 @@ footer a:hover {
 
 /*----- HOME end -----*/
 
+/*----- Packages -----*/
+#pack-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* Media */
 
 @media screen and (max-width: 1600px) {
+/*----- HOME -----*/
+
   .container {
     width: 300px;
   }
@@ -211,6 +219,8 @@ footer a:hover {
 }
 
 @media screen and (max-width: 900px) {
+/*----- HOME -----*/
+
   #marine,
   #electric,
   #catering {
@@ -222,6 +232,8 @@ footer a:hover {
 }
 
 @media screen and (max-width: 700px) {
+/*----- HOME -----*/
+
   nav {
     flex-direction: column;
   }
